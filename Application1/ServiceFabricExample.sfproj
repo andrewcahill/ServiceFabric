@@ -29,7 +29,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Actor1\AdditionMicroService.csproj" />
+    <ProjectReference Include="..\AdditionMicroService\AdditionMicroService.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
