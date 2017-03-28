@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Actors.Runtime;
 
 namespace AdditionMicroService
 {
-    [EventSource(Name = "MyCompany-Application1-AdditionMicroService")]
+    [EventSource(Name = "MyCompany-ServiceFabricExample-AdditionMicroService")]
     internal sealed class ActorEventSource : EventSource
     {
         public static readonly ActorEventSource Current = new ActorEventSource();
