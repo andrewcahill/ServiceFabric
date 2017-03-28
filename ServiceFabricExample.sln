@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Application1", "Application1\Application1.sfproj", "{F9450B24-4390-45AF-B2FB-0396A01300D7}"
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ServiceFabricExample", "Application1\ServiceFabricExample.sfproj", "{F9450B24-4390-45AF-B2FB-0396A01300D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor1", "Actor1\Actor1.csproj", "{A882F666-7E75-4277-A742-CEA064ED6E5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionMicroService", "Actor1\AdditionMicroService.csproj", "{A882F666-7E75-4277-A742-CEA064ED6E5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor1.Interfaces", "Actor1.Interfaces\Actor1.Interfaces.csproj", "{B0ACCDC8-58EA-45EF-8CBC-1C66742B58C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionMicroService.Interfaces", "Actor1.Interfaces\AdditionMicroService.Interfaces.csproj", "{B0ACCDC8-58EA-45EF-8CBC-1C66742B58C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{58A8384B-4C5F-4112-B9CD-325AE971A4F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "ConsoleApplication1\TestConsole.csproj", "{58A8384B-4C5F-4112-B9CD-325AE971A4F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,8 +7,8 @@
     <ProjectGuid>{B0ACCDC8-58EA-45EF-8CBC-1C66742B58C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Actor1.Interfaces</RootNamespace>
-    <AssemblyName>Actor1.Interfaces</AssemblyName>
+    <RootNamespace>AdditionMicroService.Interfaces</RootNamespace>
+    <AssemblyName>AdditionMicroService.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
