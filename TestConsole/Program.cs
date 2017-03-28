@@ -22,7 +22,7 @@ namespace ConsoleApplication1
                 var actorId = ActorId.CreateRandom();
 
                 var simpleActor =
-                ActorProxy.Create<IAdditionMicroService>(actorId, "fabric:/Application1");
+                ActorProxy.Create<IAdditionMicroService>(actorId, "fabric:/ServiceFabricExample");
 
                 await simpleActor.SetInputAsync("1+1", new System.Threading.CancellationToken());
                 result = await simpleActor.GetResultAsync(new System.Threading.CancellationToken());
