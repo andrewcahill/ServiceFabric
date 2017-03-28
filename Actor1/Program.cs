@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Actors.Runtime;
 
-namespace Actor1
+namespace AdditionMicroService
 {
     internal static class Program
     {
@@ -21,7 +21,7 @@ namespace Actor1
                 // are automatically populated when you build this project.
                 // For more information, see https://aka.ms/servicefabricactorsplatform
 
-                ActorRuntime.RegisterActorAsync<Actor1>(
+                ActorRuntime.RegisterActorAsync<AdditionMicroService>(
                    (context, actorType) => new ActorService(context, actorType)).GetAwaiter().GetResult();
 
                 Thread.Sleep(Timeout.Infinite);

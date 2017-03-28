@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Runtime;
 using Microsoft.ServiceFabric.Actors.Client;
-using Actor1.Interfaces;
+using AdditionMicroService.Interfaces;
 
-namespace Actor1
+namespace AdditionMicroService
 {
     /// <remarks>
     /// This class represents an actor.
@@ -19,14 +19,14 @@ namespace Actor1
     ///  - None: State is kept in memory only and not replicated.
     /// </remarks>
     [StatePersistence(StatePersistence.Persisted)]
-    internal class Actor1 : Actor, IActor1
+    internal class AdditionMicroService : Actor, IAdditionMicroService
     {
         /// <summary>
-        /// Initializes a new instance of Actor1
+        /// Initializes a new instance of AdditionMicroService
         /// </summary>
         /// <param name="actorService">The Microsoft.ServiceFabric.Actors.Runtime.ActorService that will host this actor instance.</param>
         /// <param name="actorId">The Microsoft.ServiceFabric.Actors.ActorId for this actor instance.</param>
-        public Actor1(ActorService actorService, ActorId actorId)
+        public AdditionMicroService(ActorService actorService, ActorId actorId)
             : base(actorService, actorId)
         {
         }

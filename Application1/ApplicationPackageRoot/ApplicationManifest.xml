@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="Application1Type" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
-    <Parameter Name="Actor1ActorService_PartitionCount" DefaultValue="10" />
-    <Parameter Name="Actor1ActorService_MinReplicaSetSize" DefaultValue="3" />
-    <Parameter Name="Actor1ActorService_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="AdditionMicroServiceActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="AdditionMicroServiceActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="AdditionMicroServiceActorService_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
        should match the Name and Version attributes of the ServiceManifest element defined in the 
@@ -12,9 +12,9 @@
     <ServiceManifestRef ServiceManifestName="AdditionMicroServicePkg" ServiceManifestVersion="1.0.0" />
   </ServiceManifestImport>
   <DefaultServices>
-    <Service Name="Actor1ActorService" GeneratedIdRef="b2dfc9c3-2f97-46d0-8945-551f3937ac74|Persisted">
-      <StatefulService ServiceTypeName="Actor1ActorServiceType" TargetReplicaSetSize="[Actor1ActorService_TargetReplicaSetSize]" MinReplicaSetSize="[Actor1ActorService_MinReplicaSetSize]">
-        <UniformInt64Partition PartitionCount="[Actor1ActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+    <Service Name="AdditionMicroServiceActorService" GeneratedIdRef="afe80636-7891-49b2-9993-da8868179914|Persisted">
+      <StatefulService ServiceTypeName="AdditionMicroServiceActorServiceType" TargetReplicaSetSize="[AdditionMicroServiceActorService_TargetReplicaSetSize]" MinReplicaSetSize="[AdditionMicroServiceActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[AdditionMicroServiceActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
       </StatefulService>
     </Service>
     <!-- The section below creates instances of service types, when an instance of this 

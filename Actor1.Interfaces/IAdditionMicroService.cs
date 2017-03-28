@@ -5,13 +5,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Actors;
 
-namespace Actor1.Interfaces
+namespace AdditionMicroService.Interfaces
 {
     /// <summary>
     /// This interface defines the methods exposed by an actor.
     /// Clients use this interface to interact with the actor that implements it.
     /// </summary>
-    public interface IActor1 : IActor
+    public interface IAdditionMicroService : IActor
     {
         /// <summary>
         /// TODO: Replace with your own actor method.
