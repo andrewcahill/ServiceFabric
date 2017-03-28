@@ -15,7 +15,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int result = 0;
+            int result = 10;
 
             Task.Run(async () =>
             {
